@@ -35,15 +35,20 @@ This test version logs some timing data to **malloc_PIDX.log** and it would be h
 
 The tbbmallocs logfile looks like in this example:
 
-    SeLockMemoryPrivilege: granted, huge pages enabled
+	SeLockMemoryPrivilege: granted, huge pages enabled
 
-	0.000s: 0.117ms  2048k at:0xffc00000 Alloc LP
-	0.000s: 0.001ms   128k at:0x01ec0000 Alloc SP
-	0.015s: 0.362ms  8192k at:0xff400000 Alloc LP
-	0.593s: 0.199ms  4096k at:0xff000000 Alloc LP
-	0.593s: 0.174ms  4096k at:0xfec00000 Alloc LP
-	0.593s: 0.174ms  4096k at:0xfe800000 Alloc LP
-	.....
+	   0.000s: 0.118ms  2048k at:0xffc00000 Alloc LP (   2M)
+	   0.000s: 0.001ms   128k at:0x003b0000 Alloc SP (   2M)
+	   0.000s: 0.357ms  8192k at:0xff400000 Alloc LP (  10M)
+	   0.593s: 0.121ms  2048k at:0xff200000 Alloc LP (  12M)
+	   0.593s: 0.096ms  2048k at:0xff000000 Alloc LP (  14M)
+	   0.593s: 0.094ms  2048k at:0xfee00000 Alloc LP (  16M)
+	   0.593s: 0.094ms  2048k at:0xfec00000 Alloc LP (  18M)
+	   0.734s: 0.121ms  2048k at:0xfea00000 Alloc LP (  20M)
+	   0.734s: 0.096ms  2048k at:0xfe800000 Alloc LP (  22M)
+	   0.734s: 0.095ms  2048k at:0xfe600000 Alloc LP (  24M)
+	   0.734s: 0.098ms  2048k at:0xfe400000 Alloc LP (  26M)
+		.....
 
 The first line for example tells you, that the required privileg is set correctly.     
 (LP means large pages, SP means small pages)
