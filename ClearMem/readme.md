@@ -1,7 +1,6 @@
-... here is a little experimental tool, which can free some physical RAM on your system (flushing the system cache and empty the standby list) ...
+... here is a little experimental tool, which can free some physical RAM on your system (flushing the system cache, reducing the processes workingsets, empty the modified list and empty the standby list) ...
 
 Use this tool, if your tbbmalloc malloc_xxxx.log shows **early fallbacks** to 'single pages' (fallback to SP).
-
 Because i can't reproduce such fallbacks on my system (even if i reduce my phys. RAM to 6GB),
 i can't really verify the success of this tool.
 
