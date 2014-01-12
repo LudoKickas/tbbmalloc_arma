@@ -37,13 +37,16 @@ The tbbmallocs logfile looks like in this example:
 
 	WindowsVersion: 6.1  ServicePack: 1.0  Typ: Desktop
 
-	process virtual address space available:           4077M
-
-	system physical RAM available/total:       12262M/16351M
-	system committed current/peak/limit: 4194M/ 4578M/40875M
-	system cache current:                              5740M
-
-	system handles/processes/threads:         13122/ 48/ 607
+	process virt. address available:  4077M
+	system physical RAM total:       16351M
+	system physical RAM available:   12965M
+	system committed limit:          40875M
+	system committed peak:            4175M
+	system committed current:         3810M
+	system cache current:               88M
+	system handles:                   12923
+	system processes:                    46
+	system threads:                     565
 
 	SeLockMemoryPrivilege: granted, huge pages enabled
 
