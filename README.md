@@ -35,6 +35,16 @@ This test version logs some timing data to **malloc_PIDX.log** and it would be h
 
 The tbbmallocs logfile looks like in this example:
 
+	WindowsVersion: 6.1  ServicePack: 1.0  Typ: Desktop
+
+	process virtual address space available:           4077M
+
+	system physical RAM available/total:       12262M/16351M
+	system committed current/peak/limit: 4194M/ 4578M/40875M
+	system cache current:                              5740M
+
+	system handles/processes/threads:         13122/ 48/ 607
+
 	SeLockMemoryPrivilege: granted, huge pages enabled
 
 	   0.000s: 0.118ms  2048k at:0xffc00000 Alloc LP (   2M)
