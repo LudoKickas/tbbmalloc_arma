@@ -37,31 +37,32 @@ The tbbmallocs logfile looks like in this example:
 
 	WindowsVersion: 6.1  ServicePack: 1.0  Typ: Desktop
 
-	process virt. address available:  4077M
-	system physical RAM total:       16351M
-	system physical RAM available:   12965M
-	system committed limit:          40875M
-	system committed peak:            4175M
-	system committed current:         3810M
-	system cache current:               88M
-	system handles:                   12923
-	system processes:                    46
-	system threads:                     565
+	process virt. address available:  3840
+	system physical RAM total:       16351
+	system physical RAM available:   12746
+	system committed limit:          40875
+	system committed peak:            6720
+	system committed current:         3612
+	system cache current:             2907
+	system handles:                   9592
+	system processes:                   43
+	system threads:                    503
+
+	system uptime minutes:              50
 
 	SeLockMemoryPrivilege: granted, huge pages enabled
 
-	   0.000s: 0.118ms  2048k at:0xffc00000 Alloc LP (   2M)
-	   0.000s: 0.001ms   128k at:0x003b0000 Alloc SP (   2M)
-	   0.000s: 0.357ms  8192k at:0xff400000 Alloc LP (  10M)
-	   0.593s: 0.121ms  2048k at:0xff200000 Alloc LP (  12M)
-	   0.593s: 0.096ms  2048k at:0xff000000 Alloc LP (  14M)
-	   0.593s: 0.094ms  2048k at:0xfee00000 Alloc LP (  16M)
-	   0.593s: 0.094ms  2048k at:0xfec00000 Alloc LP (  18M)
-	   0.734s: 0.121ms  2048k at:0xfea00000 Alloc LP (  20M)
-	   0.734s: 0.096ms  2048k at:0xfe800000 Alloc LP (  22M)
-	   0.734s: 0.095ms  2048k at:0xfe600000 Alloc LP (  24M)
-	   0.734s: 0.098ms  2048k at:0xfe400000 Alloc LP (  26M)
-		.....
+	   0.015s:   0.18ms     2048k at:0xffc00000 Alloc LP (   2M)
+	   0.015s:   0.00ms      128k at:0x00230000 Alloc SP (   2M)
+	   0.031s:   0.43ms     8192k at:0xff400000 Alloc LP (  10M)
+	   0.686s:   0.25ms     4096k at:0xff000000 Alloc LP (  14M)
+	   0.686s:   0.22ms     4096k at:0xfec00000 Alloc LP (  18M)
+	   0.686s:   0.21ms     4096k at:0xfe800000 Alloc LP (  22M)
+	   0.686s:   0.25ms     4096k at:0xfe400000 Alloc LP (  26M)
+	   0.967s:   0.32ms     4096k at:0xfe000000 Alloc LP (  30M)
+	   0.967s:   0.30ms     4096k at:0xfdc00000 Alloc LP (  34M)
+	   0.967s:   0.26ms     4096k at:0xfd800000 Alloc LP (  38M)
+	   .....
 
 The first line for example tells you, that the required privileg is set correctly.     
 (LP means large pages, SP means small pages)
